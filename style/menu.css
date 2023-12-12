@@ -1,0 +1,51 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #BA67F3 0%, #7667F3 95.31%);
+    margin: 90px 50px 0 0;
+    width: calc(100% - 50px);
+    height: calc(100vh - 90px);
+    padding: 0 15px 20px 15px;
+    align-items: center;
+    position: absolute;
+    overflow-y: auto;
+    transform: translateX(100%);
+    z-index: 2;
+}
+
+.menu__title {
+    font-size: 1.25rem;
+    color: white;
+    padding: 20px 0 30px 0;
+    height: auto;
+}
+
+/* Animacao */
+
+.menuLeaving {
+    -webkit-animation: menuLeaving 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.menuEntering {
+    -webkit-animation: menuEntering 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes menuLeaving {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes menuEntering {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

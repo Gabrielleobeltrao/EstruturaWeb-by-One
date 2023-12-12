@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    background: linear-gradient(90deg, #C266F2 0%, #7566F2 100%);
+    width: 100vw;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Para Site</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/slidebar.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/itens.css">
+    <link rel="stylesheet" href="style/itensCabecalho.css">
+    <link rel="stylesheet" href="style/itensBannerInicial.css">
+    <link rel="stylesheet" href="style/itensRodape.css">
+    <link rel="stylesheet" href="style/construcao.css">
+    <link rel="stylesheet" href="style/preco.css">
+    <link rel="stylesheet" href="style/controle.css">
+    <link rel="stylesheet" href="style/enviarsite.css">
+    <link rel="stylesheet" href="style/form.css">
+    <link rel="stylesheet" href="style/buscaMenu.css">
+</head>
+<body>
+    <header>
+        <a href="https://oneplataforma.com/">
+            <img src="assets/logo-one.svg" alt="Logo OnePlataforma">
+        </a>
+    </header>
+    <main>
+        <!-- Slidebar -->
+        <section class="slidebar slidebarEntering" id="slidebar">
+            <div class="slidebar__menu">
+                <h2 class="slidebar__menu__title" id="cabecalhoTitle">Cabeçalho</h2>
+                <h2 class="slidebar__menu__title" id="secoesTitle">Seções</h2>
+                <h2 class="slidebar__menu__title" id="rodapeTitle">Rodapé</h2>
+            </div>
+            <img class="arrowLeftToRight" id="arrow" src="assets/arrow.svg" alt="arrow">
+        </section>
+        <!-- Menu Cabecalho -->
+        <section class="menu hide" id="cabecalho">
+            <div>
+                <h2 class="menu__title">Cabeçalho</h2>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__cabecalho__item1">
+                    <h3 class="menu__cabecalho__item1__logo">Logo</h3>
+                    <div class="menu__cabecalho__item1__links">
+                        <h4 class="menu__cabecalho__item1__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item1__textomenu">MENU</h4>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__cabecalho__item2">
+                	<h4 class="menu__cabecalho__item2__textomenu">MENU</h4>
+                	<h3 class="menu__cabecalho__item2__logo">Logo</h3>
+                	<h4 class="menu__cabecalho__item2__textomenu">MENU</h4>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__cabecalho__item3">
+                    <h3 class="menu__cabecalho__item3__logo">Logo</h3>
+                    <h4 class="menu__cabecalho__item3__textomenu">MENU</h4>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__cabecalho__item4">
+                    <h2 class="menu__cabecalho__item4__logo">Logo</h2>
+                    <div class="menu__cabecalho__item4__links">
+                        <h4 class="menu__cabecalho__item4__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item4__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item4__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item4__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item4__textomenu">MENU</h4>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__cabecalho__item5">
+                    <h2 class="menu__cabecalho__item5__logo">Logo</h2>
+                    <div class="menu__cabecalho__item5__links">
+                        <h4 class="menu__cabecalho__item5__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item5__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item5__textomenu">MENU</h4>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__cabecalho__item6">
+                    <div class="menu__cabecalho__item6__logoelink">
+                        <h2 class="menu__cabecalho__item6__logo">Logo</h2>
+                        <h4 class="menu__cabecalho__item6__textomenu">MENU</h4>
+                    </div>
+                    <div class="menu__cabecalho__item6__links">
+                        <h4 class="menu__cabecalho__item6__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item6__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item6__textomenu">MENU</h4>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__cabecalho__item9">
+                    <h3 class="menu__cabecalho__item9__logo">Logo</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div>
+                    <div class="menu__cabecalho__item7__links">
+                        <h4 class="menu__cabecalho__item7__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item7__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item7__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item7__textomenu">MENU</h4>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div>
+                    <div class="menu__cabecalho__item8__links">
+                        <h4 class="menu__cabecalho__item8__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item8__textomenu">MENU</h4>
+                        <h4 class="menu__cabecalho__item8__textomenu">MENU</h4>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+        </section>
+        <!-- Menu Secoes -->
+        <section class="menu hide" id="secoes">
+            <h2 class="menu__title" id="bannerInicial">Seções</h2> 
+            <div class="buscaMenu">
+                <a class="buscaMenu__item" href="#bannerInicial">Banner Inicial</a>
+                <a class="buscaMenu__item" href="#foto">Foto</a>
+            </div>
+            <div>
+                <h2 class="menu__title" id="bannerInicial">Banner Inicial</h2> 
+            </div>
+            <div class="itens" preco="50">
+                <div class="bannerinicial__item1">
+                    <div>
+                        <h2 class="bannerinicial__item1__title">Titulo</h2>
+                        <p class="bannerinicial__item1__text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <h3 class="bannerinicial__item1__imgFundo">Imagem De Fundo</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">   
+                <div class="bannerinicial__item2">
+                    <h3 class="bannerinicial__item2__imgFundo">Imagem De Fundo</h3>
+                    <div>
+                        <h2 class="bannerinicial__item2__title">Titulo</h2>
+                        <p class="bannerinicial__item2__text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">   
+                <div class="bannerinicial__item3">
+                    <h3 class="bannerinicial__item3__imgFundo">Imagem De Fundo</h3>
+                    <div>
+                        <h2 class="bannerinicial__item3__title">Titulo</h2>
+                        <p class="bannerinicial__item3__text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="bannerinicial__item3__botao">Botao</h3>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">   
+                <div class="bannerinicial__item4">
+                    <h3 class="bannerinicial__item4__imgDestaque">Imagem De Destaque</h3>
+                    <div>
+                        <h2 class="bannerinicial__item4__title">Titulo</h2>
+                        <p class="bannerinicial__item4__text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="bannerinicial__item4__botao">Botao</h3>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">   
+                <div class="bannerinicial__item5">
+                    <div>
+                        <h2 class="bannerinicial__item5__title">Titulo</h2>
+                        <p class="bannerinicial__item5__text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="bannerinicial__item5__botao">Botao</h3>
+                    </div>
+                    <h3 class="bannerinicial__item5__imgDestaque">Imagem De Destaque</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">   
+                <div class="bannerinicial__item6">
+                    <h3 class="bannerinicial__item6__imgDestaque">Imagem De Destaque</h3>
+                    <div>
+                        <h2 class="bannerinicial__item6__title">Titulo</h2>
+                        <p class="bannerinicial__item6__text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">   
+                <div class="bannerinicial__item7">
+                    <div>
+                        <h2 class="bannerinicial__item7__title">Titulo</h2>
+                        <p class="bannerinicial__item7__text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <h3 class="bannerinicial__item7__imgDestaque">Imagem De Destaque</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+        </section>
+        <!-- Menu Rodape -->
+        <section class="menu hide" id="rodape">
+            <div>
+                <h2 class="menu__title">Rodapé</h2>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item1">
+                    <h2 class="menu__rodape__item1__logo">Logo</h2>
+                    <div class="menu__rodape__item1__links">
+                        <div class="menu__rodape__item1__links__div">
+                            <h4 class="menu__rodape__item1__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item1__textomenu">MENU</h4>
+                        </div>
+                        <div class="menu__rodape__item1__links__div">
+                            <h4 class="menu__rodape__item1__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item1__textomenu">MENU</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item1__copy">
+                        <h5 class="menu__rodape__item1__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item2">
+                    <h2 class="menu__rodape__item2__logo">Logo</h2>
+                    <div class="menu__rodape__item2__links">
+                            <h4 class="menu__rodape__item2__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item2__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item2__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item2__textomenu">MENU</h4>
+                    </div>
+                    <div class="menu__rodape__item2__copy">
+                        <h5 class="menu__rodape__item2__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item3">
+                    <h2 class="menu__rodape__item3__logo">Logo</h2>
+                    <div class="menu__rodape__item3__links">
+                        <div class="menu__rodape__item3__links__div">
+                            <h4 class="menu__rodape__item3__textoinf">informação</h4>
+                        </div>
+                        <div class="menu__rodape__item3__links__div">
+                            <h4 class="menu__rodape__item3__textoinf">informação</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item3__copy">
+                        <h5 class="menu__rodape__item3__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item4">
+                    <h2 class="menu__rodape__item4__logo">Logo</h2>
+                    <div class="menu__rodape__item4__links">
+                        <div class="menu__rodape__item4__links__div">
+                            <h4 class="menu__rodape__item4__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item4__textomenu">MENU</h4>
+                        </div>
+                        <div class="menu__rodape__item4__links__div">
+                            <h4 class="menu__rodape__item4__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item4__textomenu">MENU</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item4__copy">
+                        <h5 class="menu__rodape__item4__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item5">
+                    <h2 class="menu__rodape__item5__logo">Logo</h2>
+                    <div class="menu__rodape__item5__links">
+                            <h4 class="menu__rodape__item5__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item5__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item5__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item5__textomenu">MENU</h4>
+                    </div>
+                    <div class="menu__rodape__item5__copy">
+                        <h5 class="menu__rodape__item5__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item6">
+                    <h2 class="menu__rodape__item6__logo">Logo</h2>
+                    <div class="menu__rodape__item6__links">
+                        <div class="menu__rodape__item6__links__div">
+                            <h4 class="menu__rodape__item6__textoinf">informação</h4>
+                        </div>
+                        <div class="menu__rodape__item6__links__div">
+                            <h4 class="menu__rodape__item6__textoinf">informação</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item6__copy">
+                        <h5 class="menu__rodape__item6__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item7">
+                    <div class="menu__rodape__item7__links">
+                        <div class="menu__rodape__item7__links__div">
+                            <h4 class="menu__rodape__item7__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item7__textomenu">MENU</h4>
+                        </div>
+                        <div class="menu__rodape__item7__links__div">
+                            <h4 class="menu__rodape__item7__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item7__textomenu">MENU</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item7__copy">
+                        <h5 class="menu__rodape__item7__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item8">
+                    <div class="menu__rodape__item8__links">
+                            <h4 class="menu__rodape__item8__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item8__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item8__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item8__textomenu">MENU</h4>
+                    </div>
+                    <div class="menu__rodape__item8__copy">
+                        <h5 class="menu__rodape__item8__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item9">
+                    <div class="menu__rodape__item9__links">
+                        <div class="menu__rodape__item9__links__div">
+                            <h4 class="menu__rodape__item9__textoinf">informação</h4>
+                        </div>
+                        <div class="menu__rodape__item9__links__div">
+                            <h4 class="menu__rodape__item9__textoinf">informação</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item9__copy">
+                        <h5 class="menu__rodape__item9__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item10">
+                    <h2 class="menu__rodape__item10__logo">Logo</h2>
+                    <div class="menu__rodape__item10__links">
+                        <div class="menu__rodape__item10__links__menu">
+                            <h4 class="menu__rodape__item10__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item10__textomenu">MENU</h4>
+                        </div>
+                        <div>
+                            <img src="assets/redesociais.svg" alt="Redes Sociais">
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item10__copy">
+                        <h5 class="menu__rodape__item10__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item11">
+                    <div class="menu__rodape__item11__logoRedes">
+                        <h2 class="menu__rodape__item11__logo">Logo</h2>
+                        <img class="menu__rodape__item11__logoRedes__redes" src="assets/redesociais.svg" alt="Redes Sociais">
+                    </div>
+                    <div class="menu__rodape__item11__links">
+                        <h4 class="menu__rodape__item11__textomenu">MENU</h4>
+                        <h4 class="menu__rodape__item11__textomenu">MENU</h4>
+                        <h4 class="menu__rodape__item11__textomenu">MENU</h4>
+                        <h4 class="menu__rodape__item11__textomenu">MENU</h4>
+                    </div>
+                    <div class="menu__rodape__item11__copy">
+                        <h5 class="menu__rodape__item11__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item12">
+                    <div class="menu__rodape__item12__logoRedes">
+                        <h2 class="menu__rodape__item12__logo">Logo</h2>
+                        <img class="menu__rodape__item12__logoRedes__redes" src="assets/redesociais.svg" alt="Redes Sociais">
+                    </div>
+                    <div class="menu__rodape__item12__links">
+                        <div class="menu__rodape__item12__links__div">
+                            <h4 class="menu__rodape__item12__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item12__textomenu">MENU</h4>
+                        </div>
+                        <div class="menu__rodape__item12__links__div">
+                            <h4 class="menu__rodape__item12__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item12__textomenu">MENU</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item12__copy">
+                        <h5 class="menu__rodape__item12__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item13">
+                    <div class="menu__rodape__item13__logoRedes">
+                        <h2 class="menu__rodape__item13__logo">Logo</h2>
+                        <img class="menu__rodape__item13__logoRedes__redes" src="assets/redesociais.svg" alt="Redes Sociais">
+                    </div>
+                    <div class="menu__rodape__item13__links">
+                        <div class="menu__rodape__item13__links__div">
+                            <h4 class="menu__rodape__item13__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item13__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item13__textomenu">MENU</h4>
+                        </div>
+                        <div class="menu__rodape__item13__links__div">
+                            <h4 class="menu__rodape__item13__textoinf">informação</h4>
+                            <h4 class="menu__rodape__item13__textoinf">informação</h4>
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item13__copy">
+                        <h5 class="menu__rodape__item13__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item14">
+                    <div class="menu__rodape__item14__links">
+                        <div class="menu__rodape__item14__links__div">
+                            <h4 class="menu__rodape__item14__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item14__textomenu">MENU</h4>
+                        </div>
+                        <div class="menu__rodape__item14__links__div">
+                            <h4 class="menu__rodape__item14__textomenu">MENU</h4>
+                            <img class="menu__rodape__item14__logoRedes__redes" src="assets/redesociais.svg" alt="Redes Sociais">
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item14__copy">
+                        <h5 class="menu__rodape__item14__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item15">
+                    <div class="menu__rodape__item15__links">
+                        <div class="menu__rodape__item15__links__menu">
+                            <h4 class="menu__rodape__item15__textomenu">MENU</h4>
+                            <h4 class="menu__rodape__item15__textomenu">MENU</h4>
+                        </div>
+                        <div>
+                            <img src="assets/redesociais.svg" alt="Redes Sociais">
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item15__copy">
+                        <h5 class="menu__rodape__item15__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__rodape__item16">
+                    <div class="menu__rodape__item16__links">
+                        <div class="menu__rodape__item16__links__menu">
+                            <h4 class="menu__rodape__item13__textoinf">informação</h4>
+                        </div>
+                        <div>
+                            <img src="assets/redesociais.svg" alt="Redes Sociais">
+                        </div>
+                    </div>
+                    <div class="menu__rodape__item16__copy">
+                        <h5 class="menu__rodape__item16__copy__text">Copyright 20**, Nome</h5>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+        </section>
+        <!-- Area de Construcao -->
+        <section>
+            <div class="construcao" id="construcao"></div>
+        </section>
+        <!-- Preco Total -->
+        <section class="preco">
+            <h2 class="preco__title">Valor Total do site</h2>
+            <div class="preco__site">
+                <h3 class="preco__site__price" id="total">350</h3>
+                <h3 class="preco__site__price">,00</h3>
+                <h4 class="preco__site__brl">BRL</h4>
+            </div>
+            <div class="preco__mensais">
+                <h5 class="preco__mensais__plus">+</h5>
+                <h2 class="preco__mensais__price">150,00</h2>
+                <div class="preco__mensais__test">
+                    <h4 class="preco__site__brlmes">BRL</h4>
+                    <h4 class="preco__site__mes">/Mês</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Formulario  -->
+        <section class="form">
+            <div class="form__div">
+                <label class="form__label" for="nome">Nome</label>
+                <input class="form__input" type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form__div">
+                <label class="form__label" for="telefone">Telefone</label>
+                <input class="form__input" type="tel" id="telefone"  name="telefone" required>
+            </div>
+            <div class="form__div">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email" required>
+            </div>
+        </section>
+        <section class="btnEnviarSite" onclick="enviarEmail()">
+            <h2 class="btnEnviarSite__title">Enviar Site</h2>
+        </section>
+    </main>
+    <script type='text/javascript'>
+        var precoTotal = 0;
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/sliderbar.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/criador.js"></script>
+    <script src="scripts/barradecontrole.js"></script>
+    <script src="scripts/preco.js"></script>
+    <script src="scripts/enviaremail.js"></script>
+    <script src="scripts/localStorage.js"></script>
+</body>
+</html>

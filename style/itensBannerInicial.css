@@ -1,0 +1,244 @@
+/* item1 */
+
+.bannerinicial__item1 {
+    background: #D9D9D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 567px;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-between;
+}
+
+.bannerinicial__item1__title {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bannerinicial__item1__text {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.bannerinicial__item1__imgFundo {
+    align-self: flex-end;
+}
+
+/* item2 */
+
+.bannerinicial__item2 {
+    background: #D9D9D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 567px;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-between;
+}
+
+.bannerinicial__item2__imgFundo {
+    align-self: flex-end;
+}
+
+.bannerinicial__item2__title {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bannerinicial__item2__text {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* item3 */
+
+.bannerinicial__item3 {
+    background: #D9D9D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 567px;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.bannerinicial__item3__imgFundo {
+    align-self: flex-end;
+}
+
+.bannerinicial__item3__title {
+    padding-top: 160px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bannerinicial__item3__text {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.bannerinicial__item3__botao {
+    text-align: center;
+    border-radius: 10px;
+    background: #9C9C9C;
+    font-size: 1.25rem;
+    padding: 5px 0;
+    margin: 5px 50px 0 50px;
+}
+
+/* item4 */
+
+.bannerinicial__item4 {
+    background: #D9D9D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 567px;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.bannerinicial__item4__imgDestaque {
+    background: #ABABAB;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 120px 0;
+    margin: 30px 0 0 0;
+    width: 100%;
+}
+
+.bannerinicial__item4__title {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bannerinicial__item4__text {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.bannerinicial__item4__botao {
+    text-align: center;
+    border-radius: 10px;
+    background: #9C9C9C;
+    font-size: 1.25rem;
+    padding: 5px 0;
+    margin: 5px 50px 0 50px;
+}
+
+/* item5 */
+
+.bannerinicial__item5 {
+    background: #D9D9D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 567px;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.bannerinicial__item5__imgDestaque {
+    background: #ABABAB;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 120px 0;
+    margin: 15px 0 0 0;
+    width: 100%;
+}
+
+.bannerinicial__item5__title {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bannerinicial__item5__text {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.bannerinicial__item5__botao {
+    text-align: center;
+    border-radius: 10px;
+    background: #9C9C9C;
+    font-size: 1.25rem;
+    padding: 5px 0;
+    margin: 5px 50px 25px 50px;
+}
+
+/* item6 */
+
+.bannerinicial__item6 {
+    background: #D9D9D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 567px;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.bannerinicial__item6__imgDestaque {
+    background: #ABABAB;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 120px 0;
+    margin: 40px 0 0 0;
+    width: 100%;
+}
+
+.bannerinicial__item6__title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bannerinicial__item6__text {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* item7 */
+
+.bannerinicial__item7 {
+    background: #D9D9D9;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 567px;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.bannerinicial__item7__imgDestaque {
+    background: #ABABAB;
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 120px 0;
+    margin: 40px 0 0 0;
+    width: 100%;
+}
+
+.bannerinicial__item7__title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.bannerinicial__item7__text {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}

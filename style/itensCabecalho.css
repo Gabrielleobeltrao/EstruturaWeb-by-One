@@ -1,0 +1,234 @@
+/* item1 */
+
+.menu__cabecalho__item1 {
+    background: #CDCDCD;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    padding: 7px 10px;
+    justify-content: space-between;
+}
+
+.menu__cabecalho__item1__logo {
+    font-size: 1.875rem;
+}
+
+.menu__cabecalho__item1__links {
+    display: flex;
+    gap: 20px;
+    justify-self: end;
+}
+
+.menu__cabecalho__item1__textomenu {
+    font-size: 0.75rem;
+}
+
+
+/* item2 */
+
+.menu__cabecalho__item2 {
+    background: #CDCDCD;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    padding: 7px 10px;
+    justify-content: space-between;
+}
+
+.menu__cabecalho__item2__logo {
+    font-size: 1.875rem;
+}
+
+.menu__cabecalho__item2__textomenu {
+    font-size: 0.75rem;
+}
+
+
+/* item3 */
+
+.menu__cabecalho__item3 {
+    background: #CDCDCD;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 7px 10px;
+}
+
+.menu__cabecalho__item3__logo {
+    font-size: 1.875rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+.menu__cabecalho__item3__textomenu {
+    font-size: 0.75rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: end;
+}
+
+
+/* item4 */
+
+.menu__cabecalho__item4 {
+    background: #CDCDCD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__cabecalho__item4__logo {
+    font-size: 1.875rem;
+    padding: 7px 10px;
+}
+
+.menu__cabecalho__item4__links {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    padding: 7px 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: #A8A8A8;
+}
+
+.menu__cabecalho__item4__textomenu {
+    font-size: 0.75rem;
+}
+
+
+/* item5 */
+
+.menu__cabecalho__item5 {
+    background: #CDCDCD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__cabecalho__item5__logo {
+    font-size: 1.875rem;
+    padding: 7px 10px;
+}
+
+.menu__cabecalho__item5__links {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    padding: 7px 10px;
+    justify-content: space-around;
+    align-items: center;
+    background: #A8A8A8;
+}
+
+.menu__cabecalho__item5__textomenu {
+    font-size: 0.75rem;
+}
+
+/* item6 */
+
+.menu__cabecalho__item6 {
+    background: #CDCDCD;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 75px;
+}
+
+.menu__cabecalho__item6__logoelink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px 10px;
+}
+
+.menu__cabecalho__item6__logo {
+    font-size: 1.875rem;
+}
+
+.menu__cabecalho__item6__links {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    padding: 7px 10px;
+    justify-content: space-around;
+    align-items: center;
+    background: #A8A8A8;
+}
+
+.menu__cabecalho__item6__textomenu {
+    font-size: 0.75rem;
+}
+
+/* item7 */
+
+.menu__cabecalho__item7__links {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    padding: 7px 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: #A8A8A8;
+}
+
+.menu__cabecalho__item7__textomenu {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+/* item8 */
+
+.menu__cabecalho__item8__links {
+    display: flex;
+    width: 100%;
+    height: 35px;
+    padding: 7px 10px;
+    justify-content: space-around;
+    align-items: center;
+    background: #A8A8A8;
+}
+
+.menu__cabecalho__item8__textomenu {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+/* item9 */
+
+.menu__cabecalho__item9 {
+    background: #CDCDCD;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 7px 10px;
+}
+
+.menu__cabecalho__item9__logo {
+    font-size: 1.875rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+.menu__cabecalho__item9__textomenu {
+    font-size: 0.75rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: end;
+}
