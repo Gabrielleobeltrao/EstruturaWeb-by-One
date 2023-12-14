@@ -160,7 +160,7 @@ background: #BDBDBD;
     background: #ABABAB;
 }
     
-.menu__secoes__imagemCompletaGrande__bloco__texto {
+.menu__secoes__imagemCompletaGrande__texto {
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -177,7 +177,7 @@ background: #BDBDBD;
     background: #ABABAB;
 }
     
-.menu__secoes__imagemCompletaMedia__bloco__texto {
+.menu__secoes__imagemCompletaMedia__texto {
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -194,7 +194,7 @@ background: #BDBDBD;
     background: #ABABAB;
 }
     
-.menu__secoes__imagemCompletaPequena__bloco__texto {
+.menu__secoes__imagemCompletaPequena__texto {
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -307,4 +307,55 @@ background: #BDBDBD;
 .menu__secoes__iconeDuploPequeno__bloco__texto {
     font-size: 1rem;
     font-weight: 700;
+}
+
+/* Paragrafo Pequeno */
+
+.menu__secoes__paragrafoPequeno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__paragrafoPequeno__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Paragrafo Medio */
+
+.menu__secoes__paragrafoMedio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__paragrafoMedio__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Paragrafo Grande */
+
+.menu__secoes__paragrafoGrande {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__paragrafoGrande__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
 }
