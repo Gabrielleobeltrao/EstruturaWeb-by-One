@@ -17,6 +17,10 @@ html {
     padding: 0;
   }
 
+  body {
+    overflow-y: auto;
+  }
+
   ol, ul {
     list-style: none;
   }
