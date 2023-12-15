@@ -1,0 +1,19 @@
+.controle {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #C267F3 0%, #7667F3 100%);
+}
+
+.controle__arrows {
+    display: flex;
+    gap: 30px;
+}
+
+.hide {
+    display: none;
+}

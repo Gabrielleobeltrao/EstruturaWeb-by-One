@@ -1,0 +1,25 @@
+.itens {
+    width: 100%;
+}
+
+.itemCriado {
+    width: 100%;
+    height: 100%;
+}
+
+.itensPrice {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 10px 0 25px 0;
+}
+
+.itensPrice__title {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+.hide {
+    display: none;
+}

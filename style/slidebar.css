@@ -1,0 +1,83 @@
+.slidebar {
+    display: flex;
+    background: linear-gradient(90deg, #BA67F3 0%, #7667F3 95.31%);
+    border-radius: 0rem 0.625rem 0.625rem 0rem;
+    color: white;
+    padding: 5px 15px;
+    margin: 0 20px 0 0;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 55px;
+    width: calc(100vw - 40px);
+    z-index: 2;
+}
+
+.slidebar__menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.slidebar__menu__title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Animacao */
+
+.slidebarLeaving {
+    -webkit-animation: slidebarLeaving 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.slidebarEntering {
+    -webkit-animation: slidebarEntering 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.arrowRightToLeft {
+    -webkit-animation: arrowRightToLeft 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.arrowLeftToRight {
+    -webkit-animation: arrowLeftToRight 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes slidebarLeaving {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-89%);
+    }
+}
+
+@keyframes slidebarEntering {
+    from {
+        transform: translateX(-89%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes arrowRightToLeft {
+    from {
+        rotate: 180deg;
+    }
+    to {
+        rotate: 0;
+    }
+}
+
+@keyframes arrowLeftToRight {
+    from {
+        rotate: 0;
+    }
+    to {
+        rotate: 180deg;
+    }
+}
