@@ -28,12 +28,12 @@ background: #BDBDBD;
     background: #BDBDBD;
 }
 
-.menu__secoes__imagemDuplaGrande__cotainer {
+.menu__secoes__imagemDuplaGrande__container {
     display: flex;
     gap: 20px;
 }
     
-.menu__secoes__imagemDuplaGrande__cotainer__bloco {
+.menu__secoes__imagemDuplaGrande__container__bloco {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +43,7 @@ background: #BDBDBD;
     width: 100%;
 }
     
-.menu__secoes__imagemDuplaGrande__cotainer__bloco__texto {
+.menu__secoes__imagemDuplaGrande__container__bloco__texto {
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -78,12 +78,12 @@ background: #BDBDBD;
     background: #BDBDBD;
 }
 
-.menu__secoes__imagemDuplaMedio__cotainer {
+.menu__secoes__imagemDuplaMedio__container {
     display: flex;
     gap: 20px;
 }
     
-.menu__secoes__imagemDuplaMedio__cotainer__bloco {
+.menu__secoes__imagemDuplaMedio__container__bloco {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,7 @@ background: #BDBDBD;
     width: 100%;
 }
     
-.menu__secoes__imagemDuplaMedio__cotainer__bloco__texto {
+.menu__secoes__imagemDuplaMedio__container__bloco__texto {
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -128,12 +128,12 @@ background: #BDBDBD;
     background: #BDBDBD;
 }
     
-.menu__secoes__imagemDuplaPequena__cotainer {
+.menu__secoes__imagemDuplaPequena__container {
     display: flex;
     gap: 20px;
 }
         
-.menu__secoes__imagemDuplaPequena__cotainer__bloco {
+.menu__secoes__imagemDuplaPequena__container__bloco {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,9 +143,9 @@ background: #BDBDBD;
     width: 100%;
 }
         
-.menu__secoes__imagemDuplaPequena__cotainer__bloco__texto {
-        font-size: 1.25rem;
-        font-weight: 700;
+.menu__secoes__imagemDuplaPequena__container__bloco__texto {
+    font-size: 1.25rem;
+    font-weight: 700;
 }
 
 /* imagem Completa Grande */
@@ -358,4 +358,126 @@ background: #BDBDBD;
     font-size: 0.875rem;
     font-weight: 400;
     text-align: center;
+}
+
+/* Paragrafo Duplo Pequeno */
+
+.menu__secoes__paragrafoDuploPequeno {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__paragrafoDuploPequeno__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
+}
+
+/* Paragrafo Duplo Medio */
+
+.menu__secoes__paragrafoDuploMedio {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__paragrafoDuploMedio__texto {
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-align: center;
+    width: 50%;
+}
+
+/* Titulo */
+
+.menu__secoes__titulo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__titulo__texto {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Titulo Duplo */
+
+.menu__secoes__tituloDuplo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__tituloDuplo__texto {
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    width: 50%;
+}
+
+/* Botao */
+
+.menu__secoes__botao {
+    width: 100%;
+    padding: 10px 30px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__botao__bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25rem;
+    background: #ABABAB;
+}
+    
+.menu__secoes__botao__bloco__texto {
+    padding: 7px 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+    
+/* Botao Duplo */
+    
+.menu__secoes__botaoDuplo {
+    width: 100%;
+    padding: 10px 20px;
+    background: #BDBDBD;
+}
+    
+.menu__secoes__botaoDuplo__container {
+    display: flex;
+    gap: 20px;
+}
+        
+.menu__secoes__botaoDuplo__container__bloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25rem;
+    background: #ABABAB;
+    width: 100%;
+}
+        
+.menu__secoes__botaoDuplo__container__bloco__texto {
+    padding: 7px 0;
+    font-size: 1rem;
+    font-weight: 700;
 }
