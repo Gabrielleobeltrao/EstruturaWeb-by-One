@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/itensCabecalho.css">
     <link rel="stylesheet" href="style/itensBannerInicial.css">
     <link rel="stylesheet" href="style/itensSecoes.css">
+    <link rel="stylesheet" href="style/botaoTopo.css">
     <link rel="stylesheet" href="style/itensRodape.css">
     <link rel="stylesheet" href="style/construcao.css">
     <link rel="stylesheet" href="style/preco.css">
@@ -217,7 +218,7 @@
         <!-- Menu Secoes -->
 
         <section class="menu hide" id="secoes">
-            <h2 class="menu__title">Seções</h2> 
+            <h2 class="menu__title" id="secao">Seções</h2> 
             <div class="buscaMenu">
                 <a class="buscaMenu__item" href="#bannerInicial">Banner Inicial</a>
             </div>
@@ -787,6 +788,9 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$50</h3>
             </div>
+            <a class="botaotopo" href="#secao">
+                <img src="assets/arrow-topo.svg" alt="">
+            </a>
         </section>
 
         <!-- Menu Rodape -->
@@ -1222,11 +1226,15 @@
                 <h3 class="itensPrice__title">$50</h3>
             </div>
         </section>
+
         <!-- Area de Construcao -->
+
         <section>
             <div class="construcao" id="construcao"></div>
         </section>
+
         <!-- Preco Total -->
+
         <section class="preco">
             <h2 class="preco__title">Valor Total do site</h2>
             <div class="preco__site">
@@ -1243,7 +1251,9 @@
                 </div>
             </div>
         </section>
+
         <!-- Formulario  -->
+
         <section class="form">
             <div class="form__div">
                 <label class="form__label" for="nome">Nome</label>
