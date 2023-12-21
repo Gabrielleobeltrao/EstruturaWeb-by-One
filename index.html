@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="style/menu.css">
     <link rel="stylesheet" href="style/itens.css">
     <link rel="stylesheet" href="style/itensCabecalho.css">
-    <link rel="stylesheet" href="style/itensBannerInicial.css">
     <link rel="stylesheet" href="style/itensSecoes.css">
+    <link rel="stylesheet" href="style/itensBannerInicial.css">
+    <link rel="stylesheet" href="style/itensFormulario.css">
     <link rel="stylesheet" href="style/botaoTopo.css">
     <link rel="stylesheet" href="style/itensRodape.css">
     <link rel="stylesheet" href="style/construcao.css">
@@ -28,7 +29,9 @@
         </a>
     </header>
     <main>
+
         <!-- Slidebar -->
+
         <section class="slidebar slidebarEntering" id="slidebar">
             <div class="slidebar__menu">
                 <h2 class="slidebar__menu__title" id="cabecalhoTitle">Cabeçalho</h2>
@@ -37,7 +40,9 @@
             </div>
             <img class="arrowLeftToRight" id="arrow" src="assets/arrow.svg" alt="arrow">
         </section>
+
         <!-- Menu Cabecalho -->
+
         <section class="menu hide" id="cabecalho">
             <div>
                 <h2 class="menu__title">Cabeçalho</h2>
@@ -218,10 +223,11 @@
         <!-- Menu Secoes -->
 
         <section class="menu hide" id="secoes">
-            <h2 class="menu__title" id="secao">Seções</h2> 
-            <div class="buscaMenu">
+            <div id="buscaMenu" class="buscaMenu">
                 <a class="buscaMenu__item" href="#bannerInicial">Banner Inicial</a>
+                <a class="buscaMenu__item" href="#formulario">Formulário</a>
             </div>
+            <h2 class="menu__title" id="secao">Seções</h2> 
             <div class="itens" preco="50">
                 <div class="menu__secoes__imagemGrande">
                     <div class="menu__secoes__imagemGrande__bloco">
@@ -788,7 +794,239 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$50</h3>
             </div>
-            <a class="botaotopo" href="#secao">
+
+            <!-- Formulário -->
+
+            <div id="formulario">
+                <h2 class="menu__title">Formulário</h2> 
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioLabel">
+                    <h3 class="formularioLabel__texto">Label</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioCaixatextoPequeno">
+                    <h3 class="formularioCaixatextoPequeno__texto">Inserir texto ...</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioCaixatextoMedio">
+                    <h3 class="formularioCaixatextoMedio__texto">Inserir texto ...</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioCaixatextoGrande">
+                    <h3 class="formularioCaixatextoGrande__texto">Inserir texto ...</h3>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioSeletor">
+                    <div class="formularioSeletor__container">
+                        <h3 class="formularioSeletor__container__texto">Selecionar opção</h3>
+                        <h3 class="formularioSeletor__container__v">v</h3>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioRadio3">
+                    <div class="formularioRadio3__opcao">
+                        <div class="formularioRadio3__circulo"></div>
+                        <h3 class="formularioRadio3__texto">Opção 1</h3>
+                    </div>
+                    <div class="formularioRadio3__opcao">
+                        <div class="formularioRadio3__circulo"></div>
+                        <h3 class="formularioRadio3__texto">Opção 2</h3>
+                    </div>
+                    <div class="formularioRadio3__opcao">
+                        <div class="formularioRadio3__circulo"></div>
+                        <h3 class="formularioRadio3__texto">Opção 3</h3>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioRadio6">
+                    <div class="formularioRadio6__opcao">
+                        <div class="formularioRadio6__circulo"></div>
+                        <h3 class="formularioRadio6__texto">Opção 1</h3>
+                    </div>
+                    <div class="formularioRadio6__opcao">
+                        <div class="formularioRadio6__circulo"></div>
+                        <h3 class="formularioRadio6__texto">Opção 2</h3>
+                    </div>
+                    <div class="formularioRadio6__opcao">
+                        <div class="formularioRadio6__circulo"></div>
+                        <h3 class="formularioRadio6__texto">Opção 3</h3>
+                    </div>
+                    <div class="formularioRadio6__opcao">
+                        <div class="formularioRadio6__circulo"></div>
+                        <h3 class="formularioRadio6__texto">Opção 4</h3>
+                    </div>
+                    <div class="formularioRadio6__opcao">
+                        <div class="formularioRadio6__circulo"></div>
+                        <h3 class="formularioRadio6__texto">Opção 5</h3>
+                    </div>
+                    <div class="formularioRadio6__opcao">
+                        <div class="formularioRadio6__circulo"></div>
+                        <h3 class="formularioRadio6__texto">Opção 6</h3>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioBox3">
+                    <div class="formularioBox3__opcao">
+                        <div class="formularioBox3__circulo"></div>
+                        <h3 class="formularioBox3__texto">Opção 1</h3>
+                    </div>
+                    <div class="formularioBox3__opcao">
+                        <div class="formularioBox3__circulo"></div>
+                        <h3 class="formularioBox3__texto">Opção 2</h3>
+                    </div>
+                    <div class="formularioBox3__opcao">
+                        <div class="formularioBox3__circulo"></div>
+                        <h3 class="formularioBox3__texto">Opção 3</h3>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioBox6">
+                    <div class="formularioBox6__opcao">
+                        <div class="formularioBox6__circulo"></div>
+                        <h3 class="formularioBox6__texto">Opção 1</h3>
+                    </div>
+                    <div class="formularioBox6__opcao">
+                        <div class="formularioBox6__circulo"></div>
+                        <h3 class="formularioBox6__texto">Opção 2</h3>
+                    </div>
+                    <div class="formularioBox6__opcao">
+                        <div class="formularioBox6__circulo"></div>
+                        <h3 class="formularioBox6__texto">Opção 3</h3>
+                    </div>
+                    <div class="formularioBox6__opcao">
+                        <div class="formularioBox6__circulo"></div>
+                        <h3 class="formularioBox6__texto">Opção 4</h3>
+                    </div>
+                    <div class="formularioBox6__opcao">
+                        <div class="formularioBox6__circulo"></div>
+                        <h3 class="formularioBox6__texto">Opção 5</h3>
+                    </div>
+                    <div class="formularioBox6__opcao">
+                        <div class="formularioBox6__circulo"></div>
+                        <h3 class="formularioBox6__texto">Opção 6</h3>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="formularioBotao">
+                    <div class="formularioBotao__bloco">
+                        <h4 class="formularioBotao__bloco__texto">Botão</h4>
+                    </div>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+
+            <!-- Botao Topo -->
+
+            <a class="botaotopo" href="#buscaMenu">
                 <img src="assets/arrow-topo.svg" alt="">
             </a>
         </section>

@@ -2,7 +2,8 @@
     display: flex;
     position: sticky;
     align-self: self-start;
-    bottom: 0px;
+    margin-left: 10px;
+    bottom: 10px;
     background-color: #ffff;
     padding: 16px 13px;
     border-radius: 60px;
