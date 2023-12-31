@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/slidebar.css">
     <link rel="stylesheet" href="style/menu.css">
-    <link rel="stylesheet" href="style/itens.css">
-    <link rel="stylesheet" href="style/itensCabecalho.css">
-    <link rel="stylesheet" href="style/itensSecoes.css">
-    <link rel="stylesheet" href="style/itensBannerInicial.css">
-    <link rel="stylesheet" href="style/itensFormulario.css">
+    <link rel="stylesheet" href="style/itens/itens.css">
+    <link rel="stylesheet" href="style//itens/itensCabecalho.css">
+    <link rel="stylesheet" href="style/itens/itensSecoes.css">
+    <link rel="stylesheet" href="style/itens/itensBannerInicial.css">
+    <link rel="stylesheet" href="style/itens/itensFormulario.css">
+    <link rel="stylesheet" href="style/itens/itensOutros.css">
     <link rel="stylesheet" href="style/botaoTopo.css">
-    <link rel="stylesheet" href="style/itensRodape.css">
+    <link rel="stylesheet" href="style/itens/itensRodape.css">
     <link rel="stylesheet" href="style/construcao.css">
     <link rel="stylesheet" href="style/preco.css">
     <link rel="stylesheet" href="style/controle.css">
@@ -226,6 +227,7 @@
             <div id="buscaMenu" class="buscaMenu">
                 <a class="buscaMenu__item" href="#bannerInicial">Banner Inicial</a>
                 <a class="buscaMenu__item" href="#formulario">Formulário</a>
+                <a class="buscaMenu__item" href="#outros">Outros</a>
             </div>
             <h2 class="menu__title" id="secao">Seções</h2> 
             <div class="itens" preco="50">
@@ -626,32 +628,6 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$50</h3>
             </div>
-            <div class="itens" preco="50">
-                <div class="menu__secoes__espacoPequeno"></div>
-                <div class="controle hide">
-                    <div class="controle__arrows">
-                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
-                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
-                    </div>
-                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
-                </div>
-            </div>
-            <div class="itensPrice">
-                <h3 class="itensPrice__title">$50</h3>
-            </div>
-            <div class="itens" preco="50">
-                <div class="menu__secoes__espacoMedio"></div>
-                <div class="controle hide">
-                    <div class="controle__arrows">
-                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
-                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
-                    </div>
-                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
-                </div>
-            </div>
-            <div class="itensPrice">
-                <h3 class="itensPrice__title">$50</h3>
-            </div>
 
             <!-- Banner Inicial -->
 
@@ -1012,6 +988,51 @@
                         <h4 class="formularioBotao__bloco__texto">Botão</h4>
                     </div>
                 </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+
+            <!-- Outros -->
+
+            <div id="outros">
+                <h2 class="menu__title">Outros</h2> 
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__secoes__espacoPequeno"></div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__secoes__espacoMedio"></div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__secoes__novaPagina"></div>
                 <div class="controle hide">
                     <div class="controle__arrows">
                         <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
