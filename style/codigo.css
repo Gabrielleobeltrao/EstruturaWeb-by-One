@@ -73,3 +73,61 @@
     opacity: 60%;
     z-index: 3;
 }
+
+/* Animacao */
+
+.opacidadeAlta {
+    -webkit-animation: opacidadeAlta 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.opacidadeBaixa {
+    -webkit-animation: opacidadeBaixa 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.menuSaindo {
+    -webkit-animation: menuSaindo 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.menuEntrando {
+    -webkit-animation: menuEntrando 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes opacidadeAlta {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 60%;
+    }
+}
+
+@keyframes opacidadeBaixa {
+    from {
+        opacity: 60%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes menuSaindo {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(110%);
+    }
+}
+
+@keyframes menuEntrando {
+    from {
+        transform: translateX(110%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
