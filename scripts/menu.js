@@ -9,6 +9,7 @@ var rodape = document.getElementById('rodape');
 var arrow = document.getElementById('arrow');
 var construcao = document.getElementById('construcao')
 var precototal = document.getElementById('precototal')
+var form = document.getElementById('form')
 
 
 cabecalhoTitle.addEventListener('click', () => {
@@ -109,6 +110,12 @@ construcao.addEventListener('click', () => {
 });
 
 precototal.addEventListener('click', () => {
+    fecharMenus(cabecalho)
+    fecharMenus(secoes)
+    fecharMenus(rodape)
+});
+
+form.addEventListener('click', () => {
     fecharMenus(cabecalho)
     fecharMenus(secoes)
     fecharMenus(rodape)
