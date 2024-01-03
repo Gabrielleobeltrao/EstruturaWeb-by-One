@@ -13,8 +13,7 @@ function addItem(itemclicado) {
 
     //preco
     var preco = parseFloat(addItem.getAttribute("preco"));
-    precoTotal += preco;
-    atualizaPreco()
+    somaPreco(preco)
 
     addItem.children[0].setAttribute("onclick", "controle(this)");
 
