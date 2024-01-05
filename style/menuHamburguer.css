@@ -1,0 +1,110 @@
+.menuHamburguer {
+    position: fixed;
+    top: 50px;
+    width: 60%;
+    height: calc(100dvh - 50px);
+    background-color: white;
+    opacity: 100%;
+    z-index: 4;
+    transform: translateX(-100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.menuHamburguer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menuHamburguer__container__link {
+    text-decoration: none;
+    color: var(degrade-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.botaoCode {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #551A8B;
+    border-radius: 20px;
+    width: 35px;
+    height: 35px;
+}
+
+.menuHamburguer__bg {
+    position: fixed;
+    top: 50px;
+    background-color: black;
+    opacity: 0%;
+    width: 100%;
+    height: 100dvh;
+    z-index: 3;
+}
+
+.hide {
+    display: none;
+}
+
+/* Animacao */
+
+.opacidadeAltaMenuHamburguer {
+    -webkit-animation: opacidadeAltaMenuHamburguer 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.opacidadeBaixaMenuHamburguer {
+    -webkit-animation: opacidadeBaixaMenuHamburguer 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.menuSaindoMenuHamburguer {
+    -webkit-animation: menuSaindoMenuHamburguer 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.menuEntrandoMenuHamburguer {
+    -webkit-animation: menuEntrandoMenuHamburguer 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes opacidadeAltaMenuHamburguer {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 60%;
+    }
+}
+
+@keyframes opacidadeBaixaMenuHamburguer {
+    from {
+        opacity: 60%;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+@keyframes menuSaindoMenuHamburguer {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes menuEntrandoMenuHamburguer {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

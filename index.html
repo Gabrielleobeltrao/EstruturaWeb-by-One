@@ -6,6 +6,7 @@
     <title>Estrutura Para Site</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/menuHamburguer.css">
     <link rel="stylesheet" href="style/codigo.css">
     <link rel="stylesheet" href="style/slidebar.css">
     <link rel="stylesheet" href="style/menu.css">
@@ -29,15 +30,30 @@
     <!-- Header -->
 
     <header>
-        <div class="espaco"></div>
+        <div id="iconeMenuHamburguer" class="iconeMenuHamburguer">
+            <img src="assets/icon-menu-hamburguer.svg" alt="Menu Hamburguer">
+        </div>
         <a href="https://oneplataforma.com/">
             <img src="assets/logo-one.svg" alt="Logo OnePlataforma">
         </a>
-        <div id="botaoCode" class="botaoCode">
-            <img src="assets/code.svg" alt="Code">
-        </div>
+        <div class="espaco"></div>
     </header>
     <main>
+
+        <!-- Menu Hamburguer -->
+
+        <section>
+            <div id="menuHamburguer" class="menuHamburguer">
+                <div class="menuHamburguer__container">
+                    <a class="menuHamburguer__container__link" href="index.html">Estrutura web</a>
+                    <a class="menuHamburguer__container__link" href="">Blibioteca de sites</a>
+                </div>
+                <div id="botaoCode" class="botaoCode">
+                    <img src="assets/code.svg" alt="Code">
+                </div> 
+            </div>
+            <div id="menuHamburguerFundo" class="menuHamburguer__bg hide"></div>
+        </section>
 
         <!-- Codigo -->
 
@@ -56,13 +72,13 @@
 
         <!-- Slidebar -->
 
-        <section class="slidebar slidebarEntering" id="slidebar">
+        <section class="slidebar" id="slidebar">
             <div class="slidebar__menu">
                 <h2 class="slidebar__menu__title" id="cabecalhoTitle">Cabeçalho</h2>
                 <h2 class="slidebar__menu__title" id="secoesTitle">Seções</h2>
                 <h2 class="slidebar__menu__title" id="rodapeTitle">Rodapé</h2>
             </div>
-            <img class="arrowLeftToRight" id="arrow" src="assets/arrow.svg" alt="arrow">
+            <img class="" id="arrow" src="assets/arrow.svg" alt="arrow">
         </section>
 
         <!-- Menu Cabecalho -->
@@ -1555,6 +1571,7 @@
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/menuHamburguer.js"></script>
     <script src="scripts/codigo.js"></script>
     <script src="scripts/sliderbar.js"></script>
     <script src="scripts/menu.js"></script>
