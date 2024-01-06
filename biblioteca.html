@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de Sites</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/menuHamburguer.css">
+    <link rel="stylesheet" href="style/codigo.css">
+    <link rel="stylesheet" href="style/biblioteca.css">
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <div id="iconeMenuHamburguer" class="iconeMenuHamburguer">
+            <img src="assets/icon-menu-hamburguer.svg" alt="Menu Hamburguer">
+        </div>
+        <a href="https://oneplataforma.com/">
+            <img src="assets/logo-one.svg" alt="Logo OnePlataforma">
+        </a>
+        <div class="espaco"></div>
+    </header>
+    <main>
+
+        <!-- Menu Hamburguer -->
+
+        <section>
+            <div id="menuHamburguer" class="menuHamburguer">
+                <div class="menuHamburguer__container">
+                    <a class="menuHamburguer__container__link" href="index.html">Estrutura web</a>
+                    <a class="menuHamburguer__container__link" href="biblioteca.html">Biblioteca de sites</a>
+                </div>
+                <div id="botaoCode" class="botaoCode">
+                    <img src="assets/code.svg" alt="Code">
+                </div> 
+            </div>
+            <div id="menuHamburguerFundo" class="menuHamburguer__bg hide"></div>
+        </section>
+
+        <!-- Codigo -->
+
+        <section id="codigo" class="hide">
+            <div id="codigoCard" class="codigoCard">
+                <h5 id="botaoCodeX" class="codigoCard__x">X</h5>
+                <h2 class="codigoCard__title">Use o codigos para ter estruturas de sites prontas e editaveis</h2>
+                <textarea class="codigoCard__textarea" id="textareaCode" cols="30" rows="40"></textarea>
+                <h3 class="codigoCard__atencao">ATENÇĀO: Ao usar algum codigo toda sua estrutura atual sera perdida</h3>
+                <div id="usarCogigo" class="codigoCard__botao">
+                    <h4 class="codigoCard__botao__title">Usar Codigo</h4>
+                </div>
+            </div>
+            <div id="codigoBg" class="codigoBg"></div>
+        </section>
+
+         <!-- Biblioteca -->
+
+        <section class="portfolio">
+            <div class="portfolio__projetos">
+                <div class="portfolio__projetos__esquerda">
+                    <a class="projeto1" href=""></a>
+                    <a class="projeto3" href=""></a>
+                    <a class="projeto5" href=""></a>
+                    <a class="projeto7" href=""></a>
+                    <a class="projeto9" href=""></a>
+                    <a class="projeto11" href=""></a>
+                </div>
+                <div class="portfolio__projetos__direita">
+                    <a class="projeto2" href=""></a>
+                    <a class="projeto4" href=""></a>
+                    <a class="projeto6" href=""></a>
+                    <a class="projeto8" href=""></a>
+                    <a class="projeto10" href=""></a>
+                    <a class="projeto12" href=""></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/menuHamburguer.js"></script>
+    <script src="scripts/codigo.js"></script>
+</body>
+</html>
