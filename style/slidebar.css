@@ -66,18 +66,18 @@
 
 @keyframes arrowRightToLeft {
     from {
-        rotate: 180deg;
+        rotate: 0;
     }
     to {
-        rotate: 0;
+        rotate: 180deg;
     }
 }
 
 @keyframes arrowLeftToRight {
     from {
-        rotate: 0;
+        rotate: 180deg;
     }
     to {
-        rotate: 180deg;
+        rotate: 0;
     }
 }

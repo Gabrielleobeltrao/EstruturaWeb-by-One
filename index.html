@@ -6,15 +6,18 @@
     <title>Estrutura Para Site</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/menuHamburguer.css">
+    <link rel="stylesheet" href="style/codigo.css">
     <link rel="stylesheet" href="style/slidebar.css">
     <link rel="stylesheet" href="style/menu.css">
-    <link rel="stylesheet" href="style/itens.css">
-    <link rel="stylesheet" href="style/itensCabecalho.css">
-    <link rel="stylesheet" href="style/itensSecoes.css">
-    <link rel="stylesheet" href="style/itensBannerInicial.css">
-    <link rel="stylesheet" href="style/itensFormulario.css">
+    <link rel="stylesheet" href="style/itens/itens.css">
+    <link rel="stylesheet" href="style//itens/itensCabecalho.css">
+    <link rel="stylesheet" href="style/itens/itensSecoes.css">
+    <link rel="stylesheet" href="style/itens/itensBannerInicial.css">
+    <link rel="stylesheet" href="style/itens/itensFormulario.css">
+    <link rel="stylesheet" href="style/itens/itensOutros.css">
     <link rel="stylesheet" href="style/botaoTopo.css">
-    <link rel="stylesheet" href="style/itensRodape.css">
+    <link rel="stylesheet" href="style/itens/itensRodape.css">
     <link rel="stylesheet" href="style/construcao.css">
     <link rel="stylesheet" href="style/preco.css">
     <link rel="stylesheet" href="style/controle.css">
@@ -23,22 +26,59 @@
     <link rel="stylesheet" href="style/buscaMenu.css">
 </head>
 <body>
+
+    <!-- Header -->
+
     <header>
+        <div id="iconeMenuHamburguer" class="iconeMenuHamburguer">
+            <img src="assets/icon-menu-hamburguer.svg" alt="Menu Hamburguer">
+        </div>
         <a href="https://oneplataforma.com/">
             <img src="assets/logo-one.svg" alt="Logo OnePlataforma">
         </a>
+        <div class="espaco"></div>
     </header>
     <main>
 
+        <!-- Menu Hamburguer -->
+
+        <section>
+            <div id="menuHamburguer" class="menuHamburguer">
+                <div class="menuHamburguer__container">
+                    <a class="menuHamburguer__container__link" href="index.html">Estrutura web</a>
+                    <a class="menuHamburguer__container__link" href="biblioteca.html">Biblioteca de sites</a>
+                </div>
+                <div id="botaoCode" class="botaoCode">
+                    <img src="assets/code.svg" alt="Code">
+                </div> 
+            </div>
+            <div id="menuHamburguerFundo" class="menuHamburguer__bg hide"></div>
+        </section>
+
+        <!-- Codigo -->
+
+        <section id="codigo" class="hide">
+            <div id="codigoCard" class="codigoCard">
+                <h5 id="botaoCodeX" class="codigoCard__x">X</h5>
+                <h2 class="codigoCard__title">Use o codigos para ter estruturas de sites prontas e editaveis</h2>
+                <textarea class="codigoCard__textarea" id="textareaCode" cols="30" rows="40"></textarea>
+                <h3 class="codigoCard__atencao">ATENÇĀO: Ao usar algum codigo toda sua estrutura atual sera perdida</h3>
+                <div id="usarCogigo" class="codigoCard__botao">
+                    <h4 class="codigoCard__botao__title">Usar Codigo</h4>
+                </div>
+            </div>
+            <div id="codigoBg" class="codigoBg"></div>
+        </section>
+
         <!-- Slidebar -->
 
-        <section class="slidebar slidebarEntering" id="slidebar">
+        <section class="slidebar" id="slidebar">
             <div class="slidebar__menu">
                 <h2 class="slidebar__menu__title" id="cabecalhoTitle">Cabeçalho</h2>
                 <h2 class="slidebar__menu__title" id="secoesTitle">Seções</h2>
                 <h2 class="slidebar__menu__title" id="rodapeTitle">Rodapé</h2>
             </div>
-            <img class="arrowLeftToRight" id="arrow" src="assets/arrow.svg" alt="arrow">
+            <img class="" id="arrow" src="assets/arrow.svg" alt="arrow">
         </section>
 
         <!-- Menu Cabecalho -->
@@ -226,6 +266,7 @@
             <div id="buscaMenu" class="buscaMenu">
                 <a class="buscaMenu__item" href="#bannerInicial">Banner Inicial</a>
                 <a class="buscaMenu__item" href="#formulario">Formulário</a>
+                <a class="buscaMenu__item" href="#outros">Outros</a>
             </div>
             <h2 class="menu__title" id="secao">Seções</h2> 
             <div class="itens" preco="50">
@@ -378,21 +419,6 @@
             <div class="itens" preco="50">
                 <div class="menu__secoes__imagemCompletaPequena">
                     <h4 class="menu__secoes__imagemCompletaPequena__texto">Imagem</h4>
-                </div>
-                <div class="controle hide">
-                    <div class="controle__arrows">
-                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
-                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
-                    </div>
-                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
-                </div>
-            </div>
-            <div class="itensPrice">
-                <h3 class="itensPrice__title">$50</h3>
-            </div>
-            <div class="itens" preco="50">
-                <div>
-
                 </div>
                 <div class="controle hide">
                     <div class="controle__arrows">
@@ -615,32 +641,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="controle hide">
-                    <div class="controle__arrows">
-                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
-                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
-                    </div>
-                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
-                </div>
-            </div>
-            <div class="itensPrice">
-                <h3 class="itensPrice__title">$50</h3>
-            </div>
-            <div class="itens" preco="50">
-                <div class="menu__secoes__espacoPequeno"></div>
-                <div class="controle hide">
-                    <div class="controle__arrows">
-                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
-                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
-                    </div>
-                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
-                </div>
-            </div>
-            <div class="itensPrice">
-                <h3 class="itensPrice__title">$50</h3>
-            </div>
-            <div class="itens" preco="50">
-                <div class="menu__secoes__espacoMedio"></div>
                 <div class="controle hide">
                     <div class="controle__arrows">
                         <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
@@ -1012,6 +1012,51 @@
                         <h4 class="formularioBotao__bloco__texto">Botão</h4>
                     </div>
                 </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+
+            <!-- Outros -->
+
+            <div id="outros">
+                <h2 class="menu__title">Outros</h2> 
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__secoes__espacoPequeno"></div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__secoes__espacoMedio"></div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$50</h3>
+            </div>
+            <div class="itens" preco="50">
+                <div class="menu__secoes__novaPagina"></div>
                 <div class="controle hide">
                     <div class="controle__arrows">
                         <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
@@ -1473,7 +1518,7 @@
 
         <!-- Preco Total -->
 
-        <section class="preco">
+        <section class="preco" id="precototal">
             <h2 class="preco__title">Valor Total do site</h2>
             <div class="preco__site">
                 <h3 class="preco__site__price" id="total">350</h3>
@@ -1492,7 +1537,7 @@
 
         <!-- Formulario  -->
 
-        <section class="form">
+        <section class="form" id="form">
             <div class="form__div">
                 <label class="form__label" for="nome">Nome</label>
                 <input class="form__input" type="text" id="nome" name="nome" required>
@@ -1510,10 +1555,9 @@
             <h2 class="btnEnviarSite__title">Enviar Site</h2>
         </section>
     </main>
-    <script type='text/javascript'>
-        var precoTotal = 0;
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="scripts/menuHamburguer.js"></script>
+    <script src="scripts/codigo.js"></script>
     <script src="scripts/sliderbar.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/criador.js"></script>

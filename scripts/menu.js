@@ -7,6 +7,9 @@ var secoes = document.getElementById('secoes');
 var rodape = document.getElementById('rodape');
 
 var arrow = document.getElementById('arrow');
+var construcao = document.getElementById('construcao')
+var precototal = document.getElementById('precototal')
+var form = document.getElementById('form')
 
 
 cabecalhoTitle.addEventListener('click', () => {
@@ -95,25 +98,35 @@ rodapeTitle.addEventListener('click', () => {
 });
 
 arrow.addEventListener('click', () => {
-    if (cabecalho.classList.contains('menuEntering')) {
-        cabecalho.classList.remove('menuEntering')
-        cabecalho.classList.add('menuLeaving')
-        setTimeout(() => {
-            cabecalho.classList.toggle('hide'); 
-        }, 1000);
-    };
-    if (secoes.classList.contains('menuEntering')) {
-        secoes.classList.remove('menuEntering')
-        secoes.classList.add('menuLeaving')
-        setTimeout(() => {
-            secoes.classList.toggle('hide'); 
-        }, 1000);
-    };
-    if (rodape.classList.contains('menuEntering')) {
-        rodape.classList.remove('menuEntering')
-        rodape.classList.add('menuLeaving')
-        setTimeout(() => {
-            rodape.classList.toggle('hide'); 
-        }, 1000);
-    };
+    fecharMenus(cabecalho)
+    fecharMenus(secoes)
+    fecharMenus(rodape)
 });
+
+construcao.addEventListener('click', () => {
+    fecharMenus(cabecalho)
+    fecharMenus(secoes)
+    fecharMenus(rodape)
+});
+
+precototal.addEventListener('click', () => {
+    fecharMenus(cabecalho)
+    fecharMenus(secoes)
+    fecharMenus(rodape)
+});
+
+form.addEventListener('click', () => {
+    fecharMenus(cabecalho)
+    fecharMenus(secoes)
+    fecharMenus(rodape)
+});
+
+function fecharMenus (menu) {
+    if (menu.classList.contains('menuEntering')) {
+        menu.classList.remove('menuEntering');
+        menu.classList.add('menuLeaving');
+        setTimeout(() => {
+            menu.classList.toggle('hide');
+        }, 1000);
+    }
+}

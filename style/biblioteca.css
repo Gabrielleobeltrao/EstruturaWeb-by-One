@@ -1,0 +1,119 @@
+.portfolio {
+    margin-top: 50px;
+    padding: 25px 20px;
+}
+
+.portfolio__projetos {
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio__projetos__esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.projeto1 {
+    background-image: url('/assets/biblioteca/port1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.projeto3 {
+    background-image: url('/assets/biblioteca/port3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 235px;
+}
+
+.projeto5 {
+    background-image: url('/assets/biblioteca/port5.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 220px;
+}
+
+.projeto7 {
+    background-image: url('/assets/biblioteca/port7.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.projeto9 {
+    background-image: url('/assets/biblioteca/port9.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 230px;
+}
+
+.projeto11 {
+    background-image: url('/assets/biblioteca/port11.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 125px;
+}
+
+.portfolio__projetos__direita{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.projeto2 {
+    background-image: url('/assets/biblioteca/port2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 210px;
+}
+
+.projeto4 {
+    background-image: url('/assets/biblioteca/port4.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 205px;
+}
+
+.projeto6 {
+    background-image: url('/assets/biblioteca/port6.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}
+
+.projeto8 {
+    background-image: url('/assets/biblioteca/port8.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 235px;
+}
+
+.projeto10 {
+    background-image: url('/assets/biblioteca/port10.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 260px;
+}
+
+.projeto12 {
+    background-image: url('/assets/biblioteca/port12.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+}

@@ -1,0 +1,23 @@
+/* Espaço Pequeno */
+
+.menu__secoes__espacoPequeno {
+    width: 100%;
+    height: 20px;
+    background: #BDBDBD;
+}
+
+/* Espaço Medio */
+
+.menu__secoes__espacoMedio {
+    width: 100%;
+    height: 50px;
+    background: #BDBDBD;
+}
+
+/* Nova Pagina */
+
+.menu__secoes__novaPagina {
+    width: 100%;
+    height: 100px;
+    background: white;
+}
