@@ -23,7 +23,7 @@ main {
     background-image: url('/assets/biblioteca/Creators-MadeInBrasil.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 150px;
 }
 
@@ -31,7 +31,7 @@ main {
     background-image: url('/assets/biblioteca/port3.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 235px;
 }
 
@@ -39,7 +39,7 @@ main {
     background-image: url('/assets/biblioteca/port5.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 220px;
 }
 
@@ -47,7 +47,7 @@ main {
     background-image: url('/assets/biblioteca/port7.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 250px;
 }
 
@@ -55,7 +55,7 @@ main {
     background-image: url('/assets/biblioteca/port9.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 230px;
 }
 
@@ -63,7 +63,7 @@ main {
     background-image: url('/assets/biblioteca/port11.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 125px;
 }
 
@@ -78,7 +78,7 @@ main {
     background-image: url('/assets/biblioteca/port2.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 210px;
 }
 
@@ -86,7 +86,7 @@ main {
     background-image: url('/assets/biblioteca/port4.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 205px;
 }
 
@@ -94,7 +94,7 @@ main {
     background-image: url('/assets/biblioteca/port6.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 150px;
 }
 
@@ -102,7 +102,7 @@ main {
     background-image: url('/assets/biblioteca/port8.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 235px;
 }
 
@@ -110,7 +110,7 @@ main {
     background-image: url('/assets/biblioteca/port10.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 260px;
 }
 
@@ -118,6 +118,6 @@ main {
     background-image: url('/assets/biblioteca/port12.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     height: 150px;
 }
