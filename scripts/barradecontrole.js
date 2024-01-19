@@ -22,7 +22,7 @@ function removerItem(itemclicado) {
 
     //preco
     var item = itemclicado.parentNode.parentNode;
-    var preco = parseFloat(item.getAttribute("preco"));
+    var preco = parseFloat(item.getAttribute("valor"));
     precoTotal -= preco;
     atualizaPreco()
 
