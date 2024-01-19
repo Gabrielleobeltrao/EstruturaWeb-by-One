@@ -12,8 +12,7 @@ function addItem(itemclicado) {
     addItem.classList.add('item');
 
     //preco
-    var preco = parseFloat(addItem.getAttribute("preco"));
-    somaPreco(preco)
+    somaPreco(itemclicado)
 
     addItem.children[0].setAttribute("onclick", "controle(this)");
 
