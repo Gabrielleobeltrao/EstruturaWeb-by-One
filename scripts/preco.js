@@ -16,7 +16,7 @@ function somaPreco(elemento) {
     } else if (preco === "xl") {
         precoTotal += 700;
     } else {
-        precoTotal = "erro";
+        precoTotal = NaN;
     }
 
     atualizaPreco();
