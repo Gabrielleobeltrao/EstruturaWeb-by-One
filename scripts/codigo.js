@@ -25,11 +25,38 @@ botaoCodex.addEventListener('click', () => {
 })
 
 
-
 var botaoUsarCodigo = document.getElementById('usarCogigo')
-var textareaCode = document.getElementById('textareaCode')
 
 botaoUsarCodigo.addEventListener('click', () => {
-    localStorage.setItem('estruturaSite', textareaCode.value);
-    location.reload()
+    
+    var textAreaCode = document.getElementById('textAreaCode')
+    localStorage.setItem('estruturaSite', textAreaCode.value);
+
+    carregarDoLocalStorage()
+
+    var divConstrucao = document.getElementById('construcao');
+    var precos = divConstrucao.querySelectorAll('[valor]');
+
+    precoTotal = 0
+    precos.forEach(function(elemento) {
+        var preco = elemento.getAttribute("valor");
+        if (preco === "2xs") {
+            precoTotal += 0;
+        } else if (preco === "xs") {
+            precoTotal += 30;
+        } else if (preco === "s") {
+            precoTotal += 40;
+        } else if (preco === "m") {
+            precoTotal += 60;
+        } else if (preco === "l") {
+            precoTotal += 100;
+        } else if (preco === "xl") {
+            precoTotal += 700;
+        } else {
+            precoTotal = NaN;
+        }
+    });
+    localStorage.setItem('precoTotal', precoTotal);
+
+    location.reload();
 })
