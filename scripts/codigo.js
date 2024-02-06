@@ -27,20 +27,52 @@ botaoCodex.addEventListener('click', () => {
 var botaoUsarCodigo = document.getElementById('usarCogigo')
 
 botaoUsarCodigo.addEventListener('click', () => {
-    var textAreaCode = document.getElementById('textAreaCode')
-    localStorage.setItem('estruturaSite', textAreaCode.value);
+    buscarDivs();
+});
 
-    carregarDoLocalStorage()
+function buscarDivs() {
 
     var divConstrucao = document.getElementById('construcao');
-    var precos = divConstrucao.querySelectorAll('[valor]');
+    var divsItem = divConstrucao.querySelectorAll('.itens');
+
+    if (divsItem.length > 0) {
+        divsItem.forEach(function(divItem) {
+            divItem.closest('.itens').remove();;
+        });
+    }
 
     precoTotal = 0
+    salvarNoLocalStorage()
+    atualizaPreco()
 
-    precos.forEach(function(elemento) {
-        somaPreco(elemento);
+    var idsDigitados = document.getElementById('textAreaCode').value.split(',');
+
+    idsDigitados.forEach(function(id) {
+        var divEncontrada = document.getElementById(id.trim());
+
+        addItem(divEncontrada)
+
+        // Animação
+        codigoBg.classList.add('opacidadeBaixa')
+        codigoBg.classList.remove('opacidadeAlta')
+        codigoCard.classList.add('menuSaindo')
+        codigoCard.classList.remove('menuEntrando')
+        setTimeout(() => {
+            secCodigo.classList.add('hide');
+        }, 1000);
+
+        menu.classList.remove('menuEntrandoMenuHamburguer')
+        menu.classList.add('menuSaindoMenuHamburguer')
+        menuFundo.classList.remove('menuSaindoMenuHamburguer')
+        menuFundo.classList.add('opacidadeBaixaMenuHamburguer')
+        setTimeout(() => {
+            menuFundo.classList.add('hide');
+        }, 1000);
     });
 
-    localStorage.setItem('precoTotal', precoTotal);
-    location.reload();
-})
+    var textarea = document.getElementById('textAreaCode');
+
+    setTimeout(() => {
+        textarea.value = '';
+    }, 1000);
+}
