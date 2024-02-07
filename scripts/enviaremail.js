@@ -3,13 +3,27 @@ function enviarEmail() {
     var nome = document.getElementById("nome").value;
     var telefone = document.getElementById("telefone").value;
     var email = document.getElementById("email").value;
-    var conteudoConstrucao = document.getElementById("construcao").innerHTML;
+    
+    var divConstrucao = document.getElementById("construcao");
+    var elementosFilhos = divConstrucao.children;
 
+    var ids = [];
+    var idsformatadas = ids.join(", ");
+
+    for (var i = 0; i < elementosFilhos.length; i++) {
+        if (elementosFilhos[i].id) {
+            ids.push(elementosFilhos[i].id);
+        }
+    }
+
+    var idsformatadas = ids.join(", ");
+
+    
     var templateParams = {
         nome: nome,
         telefone: telefone,
         email: email,
-        conteudo: conteudoConstrucao
+        conteudo: idsformatadas
     };
 
     var serviceID = "gmail_gabrielleoaus";
