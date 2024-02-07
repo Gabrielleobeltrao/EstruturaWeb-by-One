@@ -28,3 +28,11 @@
 .form__input:focus{
     outline: 0.5px solid #000;
 }
+
+.form__avisoErro {
+    color: red;
+}
+
+.form__avisoSucesso {
+    color: green;
+}

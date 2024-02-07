@@ -658,7 +658,7 @@
             <div id="bannerInicial">
                 <h2 class="menu__title">Banner Inicial</h2> 
             </div>
-            <div class="itens" valor="l">
+            <div class="itens" id="bainTituloTopParagrefoTop" valor="l">
                 <div class="bannerinicial__item1">
                     <div>
                         <h2 class="bannerinicial__item1__title">Titulo</h2>
@@ -677,7 +677,7 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$100</h3>
             </div>
-            <div class="itens" valor="l">   
+            <div class="itens" id="bainTituloBaixoParagrafoBaixo" valor="l">   
                 <div class="bannerinicial__item2">
                     <h3 class="bannerinicial__item2__imgFundo">Imagem De Fundo</h3>
                     <div>
@@ -696,7 +696,7 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$100</h3>
             </div>
-            <div class="itens" valor="l">   
+            <div class="itens" id="bainTituloCentroParagrafoCentroBotaoCentro" valor="l">   
                 <div class="bannerinicial__item3">
                     <h3 class="bannerinicial__item3__imgFundo">Imagem De Fundo</h3>
                     <div>
@@ -716,7 +716,7 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$100</h3>
             </div>
-            <div class="itens" valor="l">   
+            <div class="itens" id="bainImgTopTituloBaixoParagrafoBaixoBotaoBaixo" valor="l">   
                 <div class="bannerinicial__item4">
                     <h3 class="bannerinicial__item4__imgDestaque">Imagem De Destaque</h3>
                     <div>
@@ -736,7 +736,7 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$100</h3>
             </div>
-            <div class="itens" valor="l">   
+            <div class="itens" id="bainTituloTopParagrafoTopBotaoTopImgBaixo" valor="l">   
                 <div class="bannerinicial__item5">
                     <div>
                         <h2 class="bannerinicial__item5__title">Titulo</h2>
@@ -756,7 +756,7 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$100</h3>
             </div>
-            <div class="itens" valor="l">   
+            <div class="itens" id="bainImgTopTituloBaixoParagrafoBaixo" valor="l">   
                 <div class="bannerinicial__item6">
                     <h3 class="bannerinicial__item6__imgDestaque">Imagem De Destaque</h3>
                     <div>
@@ -775,7 +775,7 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$100</h3>
             </div>
-            <div class="itens" valor="l">   
+            <div class="itens" id="bainTituloTopParagrafoTopImgBaixo" valor="l">   
                 <div class="bannerinicial__item7">
                     <div>
                         <h2 class="bannerinicial__item7__title">Titulo</h2>
@@ -1540,18 +1540,20 @@
         <section class="form" id="form">
             <div class="form__div">
                 <label class="form__label" for="nome">Nome</label>
-                <input class="form__input" type="text" id="nome" name="nome" required>
+                <input class="form__input" type="text" id="nome" name="nome">
             </div>
             <div class="form__div">
                 <label class="form__label" for="telefone">Telefone</label>
-                <input class="form__input" type="tel" id="telefone"  name="telefone" required>
+                <input class="form__input" type="tel" id="telefone"  name="telefone">
             </div>
             <div class="form__div">
                 <label class="form__label" for="email">Email</label>
-                <input class="form__input" type="email" id="email" name="email" required>
+                <input class="form__input" type="email" id="email" name="email">
             </div>
+            <h4 id="formAvisoErro" class="form__avisoErro hide">Todos os campos tem que ser preenchidos</h4>
+            <h4 id="formAvisoSucesso" class="form__avisoSucesso hide">Site enviado com sucesso !!!!</h4>
         </section>
-        <section class="btnEnviarSite" onclick="enviarEmail()">
+        <section class="btnEnviarSite" onclick="checarCampos()">
             <h2 class="btnEnviarSite__title">Enviar Site</h2>
         </section>
     </main>
