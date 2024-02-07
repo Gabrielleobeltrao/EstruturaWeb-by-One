@@ -1550,8 +1550,10 @@
                 <label class="form__label" for="email">Email</label>
                 <input class="form__input" type="email" id="email" name="email">
             </div>
+            <h4 id="formAvisoErro" class="form__avisoErro hide">Todos os campos tem que ser preenchidos</h4>
+            <h4 id="formAvisoSucesso" class="form__avisoSucesso hide">Site enviado com sucesso !!!!</h4>
         </section>
-        <section class="btnEnviarSite" onclick="enviarEmail()">
+        <section class="btnEnviarSite" onclick="checarCampos()">
             <h2 class="btnEnviarSite__title">Enviar Site</h2>
         </section>
     </main>

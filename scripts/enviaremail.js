@@ -1,3 +1,27 @@
+function checarCampos() {
+    var inputNome = document.getElementById("nome");
+    var inputTelefone = document.getElementById("telefone");
+    var inputemail = document.getElementById("email");
+
+    if (inputNome.value && inputTelefone.value && inputemail.value) {
+        enviarEmail();
+
+        var avisoSucesso = document.getElementById("formAvisoSucesso");
+        var avisoErro = document.getElementById("formAvisoErro");
+
+        avisoErro.classList.add("hide");
+
+        avisoSucesso.classList.remove("hide");
+        setTimeout(() => {
+            avisoSucesso.classList.add("hide");
+        }, 2000);
+    } else {
+        var avisoErro = document.getElementById("formAvisoErro");
+        avisoErro.classList.remove("hide");
+    }
+
+}
+
 function enviarEmail() {
     emailjs.init("UnO6d-tzu192X85yw");
     var nome = document.getElementById("nome").value;
@@ -18,7 +42,7 @@ function enviarEmail() {
 
     var idsformatadas = ids.join(", ");
 
-    
+
     var templateParams = {
         nome: nome,
         telefone: telefone,
