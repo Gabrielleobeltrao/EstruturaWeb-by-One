@@ -263,12 +263,19 @@
         <!-- Menu Secoes -->
 
         <section class="menu hide" id="secoes">
+            <h2 class="menu__title" id="secao">Seções</h2> 
             <div id="buscaMenu" class="buscaMenu">
+                <a class="buscaMenu__item" href="#Imagens">Imagens</a>
+                <a class="buscaMenu__item" href="#Icones">Icones</a>
+                <a class="buscaMenu__item" href="#Texto">Texto</a>
+                <a class="buscaMenu__item" href="#Botoes">Botões</a>
                 <a class="buscaMenu__item" href="#bannerInicial">Banner Inicial</a>
                 <a class="buscaMenu__item" href="#formulario">Formulário</a>
                 <a class="buscaMenu__item" href="#outros">Outros</a>
             </div>
-            <h2 class="menu__title" id="secao">Seções</h2> 
+
+            <h2 class="menu__title" id="Imagens">Imagens</h2> 
+
             <div class="itens" id="secImgGrande" valor="s">
                 <div class="menu__secoes__imagemGrande">
                     <div class="menu__secoes__imagemGrande__bloco">
@@ -431,6 +438,9 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$40</h3>
             </div>
+
+            <h2 class="menu__title" id="Icones">Icones</h2>
+
             <div class="itens" id="secIconeGrande" valor="xs">
                 <div class="menu__secoes__iconeGrande">
                     <div class="menu__secoes__iconeGrande__bloco">
@@ -505,6 +515,24 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$30</h3>
             </div>
+
+            <h2 class="menu__title" id="Texto">Texto</h2>
+
+            <div class="itens" id="secTitulo" valor="xs">
+                <div class="menu__secoes__titulo">
+                    <h4 class="menu__secoes__titulo__texto">Lorem ipsum dolor sit</h4>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$30</h3>
+            </div>
             <div class="itens" id="secParagrafoPeq" valor="xs">
                 <div class="menu__secoes__paragrafoPequeno">
                     <h4 class="menu__secoes__paragrafoPequeno__texto">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed</h4>
@@ -550,6 +578,22 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$30</h3>
             </div>
+            <div class="itens" id="secDoisTitulo" valor="xs">
+                <div class="menu__secoes__tituloDuplo">
+                    <h4 class="menu__secoes__tituloDuplo__texto">Lorem ipsum dolor</h4>
+                    <h4 class="menu__secoes__tituloDuplo__texto">Consectetur adipis</h4>
+                </div>
+                <div class="controle hide">
+                    <div class="controle__arrows">
+                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
+                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
+                    </div>
+                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
+                </div>
+            </div>
+            <div class="itensPrice">
+                <h3 class="itensPrice__title">$30</h3>
+            </div>
             <div class="itens" id="secDoisParagrafoPeq" valor="xs">
                 <div class="menu__secoes__paragrafoDuploPequeno">
                     <h4 class="menu__secoes__paragrafoDuploPequeno__texto">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed</h4>
@@ -582,37 +626,9 @@
             <div class="itensPrice">
                 <h3 class="itensPrice__title">$30</h3>
             </div>
-            <div class="itens" id="secTitulo" valor="xs">
-                <div class="menu__secoes__titulo">
-                    <h4 class="menu__secoes__titulo__texto">Lorem ipsum dolor sit</h4>
-                </div>
-                <div class="controle hide">
-                    <div class="controle__arrows">
-                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
-                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
-                    </div>
-                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
-                </div>
-            </div>
-            <div class="itensPrice">
-                <h3 class="itensPrice__title">$30</h3>
-            </div>
-            <div class="itens" id="secDoisTitulo" valor="xs">
-                <div class="menu__secoes__tituloDuplo">
-                    <h4 class="menu__secoes__tituloDuplo__texto">Lorem ipsum dolor</h4>
-                    <h4 class="menu__secoes__tituloDuplo__texto">Consectetur adipis</h4>
-                </div>
-                <div class="controle hide">
-                    <div class="controle__arrows">
-                        <img onclick="moverCima(this)" src="assets/arrow-up.svg" alt="Seta para cima">
-                        <img onclick="moverBaixo(this)" src="assets/arrow-down.svg" alt="Seta para baixo">
-                    </div>
-                    <img onclick="removerItem(this)"src="assets/delete.svg" alt="Deletar">
-                </div>
-            </div>
-            <div class="itensPrice">
-                <h3 class="itensPrice__title">$30</h3>
-            </div>
+
+            <h2 class="menu__title" id="Botoes">Botões</h2>
+
             <div class="itens" id="secBotao" valor="m">
                 <div class="menu__secoes__botao">
                     <div class="menu__secoes__botao__bloco">
